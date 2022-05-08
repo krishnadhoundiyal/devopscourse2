@@ -2,10 +2,10 @@ provider "aws" {
 
   region     = "us-east-1"
 
-  access_key = "ASIAVQS3HUNVEB6DMKBD"
+  access_key = "ASIAVQS3HUNVIB77CYII"
 
-  secret_key = "WOPW2zNwaeL6g4eq0YYyTyybvVgOJDUPg7fqgQHP"
-  token = "FwoGZXIvYXdzEBQaDFvjCBCMLToJ40RrCSK3AZ62YR1xRr8w9cjcK0XBcKMGs5SBXx6tKQHgYT/WnfMjK9SN4NAW+o6vMURO2JyqIuHHItf5QU9QWlXwM5enAgM0zx/yslNUJz/PYsyoppPCAArClbbOCG8qw/Oyzi8cKYDLCoRvNDKpoQBxoXAmgnf7XMlW1EHFFelquAWABSmldouQOeMTMCQSvabp5zWWyLIN+3DEGkyvwY1Va8yoUFHhhKR1xn5eRv1/y5YUzranu9vPY9BGaSiM4tyTBjIt4zC5uIrv9+UalINi/b59eIW/qQnJcgDCsolTzTkYq5BvuUd3aF2MomXEC8/m"
+  secret_key = "8kE1HwkDHRfSf6C1Tox1DRnQK7aRL2UY+u9xN6av"
+  token = "FwoGZXIvYXdzEB0aDMqLPDBevVjhyoJYPSK3AUcN66F30nOHN+CXFa0z2i6FkPnBm6Lv66qDey4gsfiSqWU7UMmIazVlf98hBj0stoGXbB8wzcCC1Gbc8eQw4xDgQ50wooh/Eg8dpBb/v+UcbOzjn8UhoVGrirqayLWIs6vdCuoL4WJgUL1Dyzg+TAQ41P20D2D7xgQeMbIZUtgSHG45aEnHzw84NnZdYznSvzQbaCS6beoMrB0YRXro7GTymV8hIuAFjyuM1JeE6EJP0KE7Bbx4+Cip0t6TBjIt123uaYyWKbzhB3kunLkIpk3x3bJZv9tM8UWSIFjwl6fkVq4LG3zG1NcNoZdD"
 
 }
 
@@ -475,7 +475,7 @@ resource "null_resource" "Wordpress_Installation_Waiting" {
 
      
 
-     inline = ["sudo yum update -y","sudo yum install python3 -y","sudo yum-config-manager --enable amzn2-core","sudo amazon-linux-extras list","sudo yum repolist all","sudo cat /etc/os-release","sudo yum -y install epel-release","sudo yum-config-manager --enable remi-php72","sudo yum update -y","sudo yum install php72 -y","echo Done!"]
+     inline = ["sudo yum update -y","sudo yum install python3 -y","sudo yum-config-manager --enable amzn2-core","sudo amazon-linux-extras list","sudo yum repolist all","sudo cat /etc/os-release","sudo yum-config-manager --enable remi-php56","sudo yum install yum-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm","sudo yum update -y","sudo yum install php56 -y","echo Done!"]
 
 
    

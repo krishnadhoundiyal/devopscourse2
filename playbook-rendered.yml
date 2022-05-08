@@ -7,10 +7,10 @@
 
   - name: Setting up variables
     set_fact:
-      php_modules: [  'php-fpm','php-mysqlnd', 'php-curl', 'php-gd', 'php-mbstring', 'php-xml', 'php-xmlrpc', 'php-soap', 'php-intl', 'php-zip' ]
+      php_modules: [  'php56-fpm','php56-mysqlnd', 'php56-gd', 'php56-mbstring', 'php56-xml', 'php56-xmlrpc', 'php56-soap', 'php56-intl' ]
 
       #MySQL Settings to be rendered by terraform
-      mysql_rds: terraform-20220508030045131200000003.c1ycjx79ti5t.us-east-1.rds.amazonaws.com:3306  
+      mysql_rds: terraform-20220508114513113600000004.c1ycjx79ti5t.us-east-1.rds.amazonaws.com:3306  
       mysql_db: wordpress_db
       mysql_user: wordpress_user
       mysql_password: PassWord4-user
