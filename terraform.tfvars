@@ -1,0 +1,12 @@
+database_name           = "wordpress_db"          // database name
+database_user           = "wordpress_user"        //database username
+shared_credentials_file = "~/.aws"                //Access key and Secret key file location
+region                  = "ap-southeast-2"        //sydney region
+ami                     = "ami-03ea7ada6172ff413" // linux 2 ami
+AZ1                     = "us-east-1a"       // avaibility zone
+AZ2                     = "us-east-1b"
+AZ3                     = "us-east-1c"
+PUBLIC_KEY_PATH         = "/root/.ssh/id_rsa.pub" // key name for ec2, make sure it is created before terrafomr apply
+PRIV_KEY_PATH           = "/root/.ssh/id_rsa"
+instance_type           = "t2.micro" //type pf instance
+instance_class          = "db.t2.micro"
